@@ -39,19 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
     getGridStyles();
   }
 
-  function copyToClipboard(text: string): void {
-    const tempInput = document.createElement("textarea");
-    tempInput.value = text;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
-  }
-
   function handleCopyCode(): void {
-    const generatedStyles = getGridStyles();
-    copyToClipboard(generatedStyles);
-    alert("CSS code copied to clipboard");
+    const code = cssCode.textContent;
+    if (code !== null) {
+      navigator.clipboard.writeText(code);
+      alert("CSS code copied to clipboard!");
+    }
   }
 
   function getGridStyles(): string {
