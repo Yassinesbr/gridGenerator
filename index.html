@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS grid generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="body">
+    <div class="gridContainer">Grid here</div>
+    <div class="formContainer">
+      <div class="inputsContainer">
+        <input
+          class="input"
+          type="number"
+          id="columns"
+          placeholder="Number of columns"
+          value="3"
+        />
+        <input
+          class="input"
+          type="number"
+          id="rows"
+          placeholder="Number of rows"
+          value="3"
+        />
+        <input
+          class="input"
+          type="number"
+          id="row-gap"
+          placeholder="Row gap"
+          value="10"
+        />
+        <input
+          class="input"
+          type="number"
+          id="column-gap"
+          placeholder="Column gap"
+          value="10"
+        />
+      </div>
+      <div class="cssCode" id="cssCode"></div>
+    </div>
+  </body>
+</html>

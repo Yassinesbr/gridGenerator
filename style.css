@@ -1,0 +1,56 @@
+body {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #a5a5a5;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cssCode {
+  font-family: monospace;
+  white-space: pre;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.input {
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  padding: 0 10px;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid black;
+}
